@@ -1,0 +1,307 @@
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `appex`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `adminuser`
+--
+
+CREATE TABLE IF NOT EXISTS `adminuser` (
+  `admin_id` varchar(100) NOT NULL DEFAULT '',
+  `admin_pw` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`admin_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `adminuser`
+--
+
+INSERT INTO `adminuser` (`admin_id`, `admin_pw`) VALUES
+('admin1', 'ad1');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ai`
+--
+
+CREATE TABLE IF NOT EXISTS `ai` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `question` varchar(1000) NOT NULL,
+  `option_1` varchar(100) NOT NULL,
+  `option_2` varchar(100) NOT NULL,
+  `option_3` varchar(100) NOT NULL,
+  `option_4` varchar(100) NOT NULL,
+  `answer` varchar(100) NOT NULL,
+  `testno` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `ai`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `datascience`
+--
+
+CREATE TABLE IF NOT EXISTS `datascience` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `question` varchar(1000) NOT NULL,
+  `option_1` varchar(100) NOT NULL,
+  `option_2` varchar(100) NOT NULL,
+  `option_3` varchar(100) NOT NULL,
+  `option_4` varchar(100) NOT NULL,
+  `answer` varchar(100) NOT NULL,
+  `testno` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `datascience`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `digitalmarketing`
+--
+
+CREATE TABLE IF NOT EXISTS `digitalmarketing` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `question` varchar(1000) NOT NULL,
+  `option_1` varchar(100) NOT NULL,
+  `option_2` varchar(100) NOT NULL,
+  `option_3` varchar(100) NOT NULL,
+  `option_4` varchar(100) NOT NULL,
+  `answer` varchar(100) NOT NULL,
+  `testno` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Dumping data for table `digitalmarketing`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `dotnet`
+--
+
+CREATE TABLE IF NOT EXISTS `dotnet` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `question` varchar(1000) NOT NULL,
+  `option_1` varchar(100) NOT NULL,
+  `option_2` varchar(100) NOT NULL,
+  `option_3` varchar(100) NOT NULL,
+  `option_4` varchar(100) NOT NULL,
+  `answer` varchar(100) NOT NULL,
+  `testno` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Dumping data for table `dotnet`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `frontenddeveloper`
+--
+
+CREATE TABLE IF NOT EXISTS `frontenddeveloper` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `question` varchar(1000) NOT NULL,
+  `option_1` varchar(100) NOT NULL,
+  `option_2` varchar(100) NOT NULL,
+  `option_3` varchar(100) NOT NULL,
+  `option_4` varchar(100) NOT NULL,
+  `answer` varchar(100) NOT NULL,
+  `testno` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `frontenddeveloper`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `fullstack`
+--
+
+CREATE TABLE IF NOT EXISTS `fullstack` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `question` varchar(1000) NOT NULL,
+  `option_1` varchar(100) NOT NULL,
+  `option_2` varchar(100) NOT NULL,
+  `option_3` varchar(100) NOT NULL,
+  `option_4` varchar(100) NOT NULL,
+  `answer` varchar(100) NOT NULL,
+  `testno` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `fullstack`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `java`
+--
+
+CREATE TABLE IF NOT EXISTS `java` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `question` varchar(1000) NOT NULL,
+  `option_1` varchar(100) NOT NULL,
+  `option_2` varchar(100) NOT NULL,
+  `option_3` varchar(100) NOT NULL,
+  `option_4` varchar(100) NOT NULL,
+  `answer` varchar(100) NOT NULL,
+  `testno` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+
+--
+-- Dumping data for table `java`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `python`
+--
+
+CREATE TABLE IF NOT EXISTS `python` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `question` varchar(1000) NOT NULL,
+  `option_1` varchar(100) NOT NULL,
+  `option_2` varchar(100) NOT NULL,
+  `option_3` varchar(100) NOT NULL,
+  `option_4` varchar(100) NOT NULL,
+  `answer` varchar(100) NOT NULL,
+  `testno` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+
+--
+-- Dumping data for table `python`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `result`
+--
+
+CREATE TABLE IF NOT EXISTS `result` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `rollno` varchar(100) NOT NULL,
+  `subject` varchar(100) NOT NULL,
+  `setno` varchar(20) NOT NULL,
+  `scoer` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=18 ;
+
+--
+-- Dumping data for table `result`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `studentrollno`
+--
+
+CREATE TABLE IF NOT EXISTS `studentrollno` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `rollno` varchar(100) NOT NULL,
+  `courses` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
+
+--
+-- Dumping data for table `studentrollno`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `testing`
+--
+
+CREATE TABLE IF NOT EXISTS `testing` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `question` varchar(1000) NOT NULL,
+  `option_1` varchar(100) NOT NULL,
+  `option_2` varchar(100) NOT NULL,
+  `option_3` varchar(100) NOT NULL,
+  `option_4` varchar(100) NOT NULL,
+  `answer` varchar(1000) NOT NULL,
+  `testno` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=28 ;
+
+--
+-- Dumping data for table `testing`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `uiux`
+--
+
+CREATE TABLE IF NOT EXISTS `uiux` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `question` varchar(1000) NOT NULL,
+  `option_1` varchar(100) NOT NULL,
+  `option_2` varchar(100) NOT NULL,
+  `option_3` varchar(100) NOT NULL,
+  `option_4` varchar(100) NOT NULL,
+  `answer` varchar(100) NOT NULL,
+  `testno` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `uiux`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE IF NOT EXISTS `user` (
+  `userid` varchar(100) NOT NULL,
+  `user_pw` varchar(100) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `courses` varchar(100) NOT NULL,
+  PRIMARY KEY (`userid`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
